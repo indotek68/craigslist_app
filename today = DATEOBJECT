@@ -1,0 +1,55 @@
+today = DATEOBJECT
+
+search(today) 
+
+	get_page_results(date)
+		doc = Nokogiri.stuff
+		rows = get_todays_row(doc, date)
+
+		filterlinks(rows, REGEX)
+
+===============
+
+today = ...
+doc = nokgoiri
+
+
+a = getPageRsults
+		+ GET ALL NOKOGIRI ROLS
+
+b = get_todays_row(a, today)
+		+ FILTER FOR AUG 12
+
+c = filterlinks(b, regex)
+	+ DO REGEX ON THE ROWS OF AUG 12
+
+puts c
+
+
+# results = page.css(".row").select do |link|
+#   puts "*" * 60
+#   ap link.css(".date").text
+#   ap link.css(".hdrlnk").text
+#   ap link.css("a")
+
+#   date = link.css(".date").text
+#   title = ap link.css(".hdrlnk").text
+# end
+
+
+# def filter_links(rows, regex)
+  # takes in rows and returns uses
+  # regex to only return links 
+  # that have "pup", "puppy", or "dog"
+  # keywords
+# end
+
+# def get_todays_rows(doc, date_str)
+#   #  1.) open chrome console to look in inside p.row to see
+#   #  if there is some internal date related content
+#   page.css(".row a").map do |link|
+#     puts link
+#   end
+#   #  2.) figure out the class that you'll need to select the
+#   #   date from a row
+# end
