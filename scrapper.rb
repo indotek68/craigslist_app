@@ -13,7 +13,7 @@ def get_todays_rows(doc, date_str, regex)
   today_results = doc.css(".row").select do |link|
     link.css(".date").text == date_str &&
     link.css(".hdrlnk").text.match(regex) &&
-    !link.css(".p").text.nil?
+    !link.css(".p").text.nil?   
     # regex
   end
   # ap today_results
@@ -42,8 +42,8 @@ end
 # want to learn more about 
 # Time in ruby??
 #   http://www.ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html#strftime-method
-today = Time.now.strftime("%b %d")
-# today = "Aug 12"
+# today = Time.now.strftime("%b %d")
+today = "Aug 12"
 search(today)
 
 
